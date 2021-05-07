@@ -1,0 +1,18 @@
+platform: nangate45             # currently only supports 'nangate'
+
+design_name: lwc_pe     # top-level design name
+
+verilog_files:                  # relative path of the source files
+- lwc_pe.v
+- mor1k_alu.v
+- mor1kx-defines.v
+- smor1kx-sprs.v
+
+sdc_file: constraint.sdc        # relative path of the constraint file
+
+die_area: "0 0 620.15 620.6"            # die area as a box
+core_area: "10.07 11.2 610.27 610.8"    # core area as a box
+
+clock_period: 2.5             # clock period in nanoseconds
+                        
+                    
